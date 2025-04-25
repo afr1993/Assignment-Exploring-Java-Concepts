@@ -1,0 +1,81 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+public class Main {
+    public static void main(String[] args) {
+        java.util.Scanner scanner = new java.util.Scanner(System.in);
+
+
+        //Adrian Flores Rangel - Assignment: Exploring Java Concepts
+        // Part 1=======================================================================================================
+
+        System.out.println("Part 1");
+        int age = 31;
+        double height =  68.89;
+        char initial = 'A';
+        boolean isStudent = false;
+
+        System.out.println("Age: "+age+"\n"+"Height: "+height+"\n"+"Initial: "+initial+"\n"+"Student: "+isStudent);
+
+        //Part 2=====================================================================================================
+        System.out.println("\nPart 2");
+        int counter = 10;
+        counter++;
+        System.out.println("Counter++: "+counter);
+        counter--;
+        System.out.println("Counter--: "+counter);
+
+        System.out.println("Counter For");
+        for(counter=counter; counter<=15; counter++){
+            System.out.println(counter);
+        }
+        System.out.println("\nCounter While");
+        while (counter>10){
+            counter--;
+            System.out.println(counter);
+        }
+
+        //Part 3=====================================================================================================
+        System.out.println("\nPart 3");
+        System.out.println("Write your Name");
+        String firstName = scanner.nextLine();
+
+        System.out.println("Write your Last Name");
+        String lastName = scanner.nextLine();
+
+        String fullName = firstName+" "+lastName;
+        System.out.println("Full Name: "+fullName);
+
+        String upperCaseName = fullName.toUpperCase();
+        System.out.println("Name In Upper Case: "+upperCaseName);
+
+        char firstChar = upperCaseName.charAt(0);
+        int countFirstChar = 0;
+
+        for (int i = 0; i < fullName.length();i++){
+            if(upperCaseName.charAt(i) == firstChar){
+                countFirstChar++;
+            }
+        }
+
+        System.out.println("First Character appears :"+countFirstChar+" Times");
+
+        //Part 4=====================================================================================================
+        System.out.println("\nPart 4");
+        int score1 =75, score2=64, score3=82;
+        int averageScore = (score1+score2+score3)/3;
+
+        if (averageScore >= 90) {
+            System.out.println("Excellent");
+        } else if (averageScore >= 70) {
+            System.out.println("Good");
+        } else if (averageScore >= 50) {
+            System.out.println("Average");
+        } else {
+            System.out.println("Poor");
+        }
+
+    }
+}
