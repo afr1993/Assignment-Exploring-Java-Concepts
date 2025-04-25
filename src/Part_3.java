@@ -28,5 +28,6 @@ public class Part_3 {
 
         System.out.println("First Character appears :"+countFirstChar+" Times");
 
+        scanner.close();
     }
 }

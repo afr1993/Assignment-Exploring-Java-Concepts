@@ -1,7 +1,7 @@
 public class Part_2 {
     public static void main(String[] args) {
 
-        System.out.println("\nPart 2");
+        System.out.println("Part 2");
         int counter = 10;
         counter++;
         System.out.println("Counter++: "+counter);
